@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Online Mp3 Player</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css_bar/bar.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+        <!-- bar menu -->
+        <div id="progressbar"></div>
+        <div id="scroolPath"></div>
+
+
+        <div class="main-div">
+                <div class="music-container">
+                        <h2 id="title">Afghan Jelebi</h2>
+                        <h3 id="artist">Syed Asar Shah</h3>
+                        <div class="image-container">
+                                <img src="image/m1.jpg" alt="">
+                        </div>
+                         <audio src="music/m1.mp3" ></audio>
+
+                        <!-- progess bar -->
+                        <div class="progressbar-container" id="progressbar-container">
+                                <div class="progress-duration-meter">
+                                        <div id="current-time">0.00</div>
+                                        <div id="duration">0: 26</div>
+                                
+
+
+                                </div>
+                                <div class="progress-div" id="progress-div">
+                                        <div class="progress" id="progress"></div>
+                                </div>
+
+                        </div>
+
+
+
+                         <!-- controls -->
+                         <div class="music-controls">
+                                <i class="fas fa-backward" id="prev" title="Previous"></i>
+                                <i class="fas fa-play main-button"  id="play" title="Play"></i>
+                                <i class="fas fa-forward" id="next" title="Next"></i>
+                         </div>
+                 </div>
+        </div>
+
+
+        
+        <script src="js/basic.js"></script>
+        <script src="js_bar/bar.js"></script>
+</body>
+</html>
